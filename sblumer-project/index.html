@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>adventures in ice cream</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <style>
+      body {
+
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+     
+        letter-spacing: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-white w3-padding"
+        style="letter-spacing: 0px"
+      >
+       
+        <img href="#home" src="Adventures in ice cream logo.png" class="w3-bar-item w3-button" alt="logo">
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#AboutSection" class="w3-bar-item w3-button lightfont2">about</a>
+          <a href="#RecipesSection" class="w3-bar-item w3-button lightfont2">recipes</a>
+          <a href="#IngredientsSection" class="w3-bar-item w3-button lightfont2">ingredients</a>
+          <a href="#VideosSection" class="w3-bar-item w3-button lightfont2">videos</a>
+          <a href="#ShopSection" class="w3-bar-item w3-button lightfont2">shop</a>
+          <img src="Shopping cart.png" class="w3-bar-item w3-button" height= 40px alt="shopping basket">
+
+          <img src="search icon_1.png" class="w3-bar-item w3-button" height= 40px alt="search">
+        </div>
+
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+        <img src="menuicon_2.png" alt="Menu" class="menuicon">
+        </a>
+      </div>
+    </div>
+
+ 
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-sand w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display: none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-large w3-button  w3-padding-16">&times;</a>
+      <a href="#AboutSection" onclick="w3_open()" class="w3-bar-item w3-button">about</a>
+      <a href="#RecipesSection" onclick="w3_open()" class="w3-bar-item w3-button">recipes</a>
+      <a href="#IngredientsSection" onclick="w3_open()" class="w3-bar-item w3-button">ingredients</a>
+      <a href="#VideosSection" onclick="w3_open()" class="w3-bar-item w3-button">videos</a>
+      <a href="#ShopSection" onclick="w3_open()" class="w3-bar-item w3-button">shop</a>
+  </nav>
+</div>
+
+<script>
+  var mySidebar = document.getElementById("mySidebar");
+
+  function w3_open() {
+      if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+      } else {
+          mySidebar.style.display = "block";
+      }
+  }
+
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+</script>
+
+    <!-- Header -->
+    <header
+      class="w3-display-container w3-content w3-wide"
+      style="max-width: 1600px; min-width: 500px"
+      id="home"
+    >
+   <!-- Hero Image -->
+<div class="w3-container">
+  <img
+      class="w3-image"
+      src="heroimage.png"
+      alt="food background image"
+      style="width: 100%;"
+  />
+</div>
+<div class="mainmargins">
+  <!-- Intro Section -->
+      <h1>Welcome to adventures in ice cream –
+        an ice cream blog.<h1>
+      <h6 class="lightfont">It all started with a serendipitous find at a thrift store: an ice cream maker. This would catapult me into a world of bizarre flavors and occasional mishaps. Here, I'll share the hits and misses of my frozen experiments, along with reviews of the coolest ice cream spots I stumble upon. — Sandra B.<h6>
+  
+<!-- About Section -->
+    <img
+        class="w3-padding-top-60"
+        src="Asset 11.png"
+        id="AboutSection"
+    />
+        <br>
+        <br>
+    <div>
+        <h5>
+          <h5>
+        <img src="About section image1.png" alt="Image 1" height=290px class="float-left">
+        <h5 class="lightfont">Welcome to Adventures in Ice Cream, where I share my experiments, successes, and failures in the realm of frozen treats. From classic flavors to unique combinations, I explore a wide range of recipes, ensuring there's something for every ice cream enthusiast. One of the key focuses of my blog is on inclusivity, offering a plethora of vegan and lactose-free options. Whether you're a seasoned ice cream aficionado or just starting your frozen dessert adventure, you'll find resources, recipes, and inspiration here. Additionally, my shop provides all the tools and ingredients you need to create your own frozen masterpieces at home. From cookbooks to cooking gadgets, Adventures in Ice Cream has everything you need to get going on your ice cream journey.<h5>
+        <br>
+        
+          <img src="About section image2.png" alt="Image 2" height=290px class="float-right">
+        <h5 class="lightfont">Join me as we delve into the world of ice cream, discovering new flavors, techniques, and <a href="https://www.usatoday.com/story/travel/destinations/2013/05/18/best-ice-cream-parlors-in-the-world/2194411/">destinations</a> together. Whether you're looking for a simple recipe to satisfy a craving or an in-depth exploration of <a href="https://www.thespruceeats.com/tips-for-making-ice-cream-at-home-909196">ingredients</a>, Adventures in Ice Cream has something for everyone. While some ice cream flavors can be more expensive to create than others, price has always been a significant consideration in my ice cream-making journey. I strive to develop recipes that not only taste delicious but also remain affordable for everyone. In fact, I'm proud to say that almost all of my recipes are more budget-friendly than anything you can find in a store. I believe that everyone should be able to enjoy the simple pleasure of a homemade scoop of ice cream without breaking the bank. So, if you're looking to indulge in a sweet treat without the hefty price tag, you've come to the right place at Adventures in Ice Cream.
+          <h5>
+    </div>
+    <br>
+<!-- Recipes Section (Table) -->
+    <img
+        class="w3-padding-top-60"
+        src="Recipes Header.png"
+        id="RecipesSection"
+        />
+        <br>
+        <br>
+        <br>
+      <!-- Sortable Table -->
+<div>
+      <table id="ice-cream-table">
+        <thead>
+          <tr>
+            <th onclick="sortTable(0)">Flavor</th>
+            <th onclick="sortTable(1)">Ingredients</th>
+            <th onclick="sortTable(2)">Dairy Content</th>
+            <th onclick="sortTable(3)">Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://en.wikipedia.org/wiki/Vanilla" class="w3-hover-text-green">lavender honey</a></td>
+            <td>4</td>
+            <td>Yes</td>
+            <td>★★★★★</td>
+          </tr>
+          <tr>
+            <td><a href="https://en.wikipedia.org/wiki/Chocolate"class="w3-hover-text-green">creamsicle</a></td>
+            <td>5</td>
+            <td>Yes</td>
+            <td>★★★★☆</td>
+          </tr>
+          <tr>
+            <td><a href="https://en.wikipedia.org/wiki/Chocolate"class="w3-hover-text-green">piña colada</a></td>
+            <td>3</td>
+            <td>No</td>
+            <td>★★★☆☆</td>
+          </tr>
+          <tr>
+            <td><a href="https://en.wikipedia.org/wiki/Chocolate"class="w3-hover-text-green">lemon</a></td>
+            <td>6</td>
+            <td>Yes</td>
+            <td>★★★☆☆</td>
+          </tr>
+          <tr>
+            <td><a href="https://en.wikipedia.org/wiki/Chocolate"class="w3-hover-text-green">dark chocolate orange</a></td>
+            <td>4</td>
+            <td>No</td>
+            <td>★★★★★</td>
+          </tr>
+        </body>
+      </table>
+</div>
+<br>
+      <!-- Ingredients Section (Gallery of Images and Scrollable Text) -->
+    <img
+    class="w3-padding-top-60"
+    src="Ingredients Header.png"
+    id="IngredientsSection"
+    />
+    <br>
+    <br>
+    <br>
+    <div class="gallery-container">
+      <div class="gallery-slide">
+        <img class="img" src="Gallery Image 1.png" alt="Image 1">
+        <div class="image-title">chamomile</div>
+      </div>
+      <div class="gallery-slide">
+        <img class="img" src="Gallery Image 2.png" alt="Image 2">
+        <div class="image-title">key lime</div>
+      </div>
+      <div class="gallery-slide">
+        <img class="img" src="Gallery Image 3.png" alt="Image 3">
+        <div class="image-title">tart cherry</div>
+      </div>
+      <a class="prev" onclick="changeSlide(-1)">←</a>
+      <a class="next" onclick="changeSlide(1)">→</a>
+    </div>
+  <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span><span class="dot" onclick="currentSlide(2)"></span><span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+<br>
+<br>
+<br>
+    <div class="scrollable-box">
+      <div class="scroll-bar"></div>
+      <div class="scrollable-content">
+        <p>cooking-grade lavender</p>
+        <p>key lime</p>
+        <p>chamomile</p>
+        <p>prunes (dried plums)</p>
+        <p>hierloom tomato</p>
+        <p>coconut</p>
+        <p>tart cherries</p>
+        <p>cinnamon</p>
+        <p>pistachio</p>
+        <p>hibiscus</p>
+        <p>rum</p>
+        <p>dates</p>
+        <p>baking dark chocolate</p>
+        <p>honey</p>
+        <p>cardamom</p>
+        <p>coconut cream</p>
+        <p>lemon zest</p>
+        <p>mango</p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="dropdown-container">
+      <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown(4)">→&nbsp;&nbsp;&nbsp;&nbsp;a note on lavender</div>
+        <div class="dropdown-content2 active" id="dropdown4">
+          <p>Using cooking lavender, specifically culinary lavender, is essential for recipes because it is specifically grown and processed for culinary use. Unlike other types of lavender, culinary lavender is free from pesticides and other harmful chemicals that can be present in non-food-grade lavender. Additionally, culinary lavender is selected for its flavor profile, which is more suitable for cooking and baking, offering a sweet, floral taste that can enhance a variety of dishes. Using culinary lavender ensures that you get the desired flavor and aroma in your recipes without the risk of any unwanted chemicals or bitterness that can be found in other types of lavender.</p>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown(5)">→&nbsp;&nbsp;&nbsp;&nbsp;a note on eggs</div>
+        <div class="dropdown-content2" id="dropdown5">
+          <p>In ice cream recipes, eggs are often used to create a smooth and creamy texture. However, it's crucial to use pasteurized eggs to reduce the risk of foodborne illness, especially when making recipes that call for raw or undercooked eggs, such as custard-based ice creams. Pasteurization involves heating the eggs to a specific temperature to kill any harmful bacteria, such as Salmonella. Additionally, when using eggs in ice cream recipes, it's essential to properly cook them to ensure that they are safe to eat. This typically involves heating the egg mixture to a specific temperature while stirring continuously to prevent the eggs from curdling. By using pasteurized eggs and cooking them properly, you can enjoy delicious and safe homemade ice cream.</p>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+      <!-- Videos Section (Dropdown and Youtube Videos) -->
+      
+    <img
+    class="w3-padding-top-60"
+    src="Videos Header.png"
+    id="VideosSection"
+    />
+    <br>
+    <br>
+    <br>
+    <div class="dropdown-container">
+      <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown(1)">→&nbsp;&nbsp;&nbsp;&nbsp;Ice Cream | Basics with Babish</div>
+        <div class="dropdown-content" id="dropdown1">
+          <iframe
+            width="698"
+            height="392"
+            src="https://www.youtube.com/embed/MdirPsiHnCA?si=Ouj6HHu3L-o2zRm0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown(2)">→&nbsp;Claire Saffitz's Homemade Ice Cream Recipe (Salted Caramel) | Dessert Person</div>
+        <div class="dropdown-content" id="dropdown2">
+          <iframe
+            width="698"
+            height="392"
+            src="https://www.youtube.com/embed/mgdQ1CPASKE?si=9yPN9wsqgQCvvdE9"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleDropdown(3)">→&nbsp;&nbsp;&nbsp;&nbsp;How to Make Ice Cream (Pt 1) | Bake It Up a Notch with Erin McDowell
+        </div>
+        <div class="dropdown-content" id="dropdown3">
+          <iframe
+            width="698"
+            height="392"
+            src="https://www.youtube.com/embed/DBFAoO8kITk?si=akFoNlUu5DCcOnWS"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    
+<!-- About Section -->
+<img
+class="w3-padding-top-60"
+src="Shop Header.png"
+id="ShopSection"
+/>
+<br>
+<br>
+<div class="gallery">
+  <div class="column">
+    <img src="sqrlbooksmall.jpg" alt="Image 1" onclick="openModal('myModal1')" class="hover-shadow cursor">
+    <div class="caption">the sqirl jam book</div>
+  </div>
+  <div class="column">
+    <img src="meshstrainersmall.jpg" alt="Image 2" onclick="openModal('myModal2')" class="hover-shadow cursor">
+    <div class="caption">mesh strainers</div>
+  </div>
+  <div class="column">
+    <img src="zeroll-ice-cream-scoop-osmall.jpg" alt="Image 3" onclick="openModal('myModal3')" class="hover-shadow cursor">
+    <div class="caption">zeroll ice cream scoop</div>
+  </div>
+  <div class="column">
+    <img src="milkcookbooksmall.jpg" alt="Image 4" onclick="openModal('myModal4')" class="hover-shadow cursor">
+    <div class="caption">momofuku milk bar</div>
+  </div>
+  <div class="column">
+    <img src="cheeseclothsmall.jpg" alt="Image 5" onclick="openModal('myModal5')" class="hover-shadow cursor">
+    <div class="caption">cheese cloth</div>
+  </div>
+  <div class="column">
+    <img src="icecreammakersmall.jpg" alt="Image 6" onclick="openModal('myModal6')" class="hover-shadow cursor">
+    <div class="caption">cuisinart ice cream maker</div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+  <span class="close" onclick="closeModal('myModal1')">&times;</span>
+  <img src="sqrlbookbig.jpg" class="modal-content" id="img01">
+  <div id="caption1" class="caption"></div>
+</div>
+<div id="myModal2" class="modal">
+  <span class="close" onclick="closeModal('myModal2')">&times;</span>
+  <img src="meshstrainerbig.jpg" class="modal-content" id="img02">
+  <div id="caption2" class="caption"></div>
+</div>
+<div id="myModal3" class="modal">
+  <span class="close" onclick="closeModal('myModal3')">&times;</span>
+  <img src="zeroll-ice-cream-scoop-obig.jpg" class="modal-content" id="img03">
+  <div id="caption3" class="caption"></div>
+</div>
+<div id="myModal4" class="modal">
+  <span class="close" onclick="closeModal('myModal4')">&times;</span>
+  <img src="milkcookbookbig.jpg" class="modal-content" id="img04">
+  <div id="caption4" class="caption"></div>
+</div>
+<div id="myModal5" class="modal">
+  <span class="close" onclick="closeModal('myModal5')">&times;</span>
+  <img src="cheeseclothbig.jpg" class="modal-content" id="img05">
+  <div id="caption5" class="caption"></div>
+</div>
+<div id="myModal6" class="modal">
+  <span class="close" onclick="closeModal('myModal6')">&times;</span>
+  <img src="icecreammakerbig.jpg" class="modal-content" id="img06">
+  <div id="caption6" class="caption"></div>
+</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Footer -->
+    <footer class="w3-left">
+      <a href="https://www.instagram.com/">
+       <img class="socialmedia" src="social media icons.png" alt="social media icons">
+      </a>
+    <br>
+    <br>
+    
+      <h6 class="lightfont">
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >privacy policy</a>
+        <a
+          >&nbsp;&nbsp;—&nbsp;&nbsp;</a>
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >terms of use</a>
+        <a
+          >&nbsp;&nbsp;—&nbsp;&nbsp;</a>
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >accessibility</a>
+  
+        
+        <br>
+        <br>
+        1-800-759-5322 <br> 
+        <br>
+        © all rights reserved — Sandra B.
+        <br>
+        <br>
+        <br>
+        <br>
+      <h6>
+    </footer>
+  </div>
+  <script>
+    function toggleDropdown(num) {
+  var dropdownContent = document.getElementById("dropdown" + num);
+  dropdownContent.classList.toggle("active");
+}
+
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+
+      // slideshow - carousel
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+  // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+
+    </script>
+
+    <script>
+      document.querySelector('.scrollable-content').addEventListener('scroll', function() {
+  var scrollTop = this.scrollTop;
+  var scrollHeight = this.scrollHeight;
+  var boxHeight = this.clientHeight;
+  var scrollBar = document.querySelector('.scroll-bar');
+
+  // Calculate the position of the scrollbar
+  var scrollBarPosition = (scrollTop / (scrollHeight - boxHeight)) * (boxHeight - scrollBar.clientHeight);
+  scrollBar.style.top = scrollBarPosition + 'px';
+});
+
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-yellow");
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-yellow", "w3-brown");
+        }
+      }
+
+      function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("ice-cream-table");
+  switching = true;
+  dir = "asc";
+  
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      
+      x = rows[i].getElementsByTagName("td")[n];
+      y = rows[i + 1].getElementsByTagName("td")[n];
+      
+      if (dir == "asc") {
+        if (n == 1 || n == 3) {
+          if (parseInt(x.innerHTML) > parseInt(y.innerHTML)) {
+            shouldSwitch = true;
+            break;
+          }
+        } else {
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+            shouldSwitch = true;
+            break;
+          }
+        }
+      } else if (dir == "desc") {
+        if (n == 1 || n == 3) {
+          if (parseInt(x.innerHTML) < parseInt(y.innerHTML)) {
+            shouldSwitch = true;
+            break;
+          }
+        } else {
+          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+            shouldSwitch = true;
+            break;
+          }
+        }
+      }
+    }
+    
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+  
+  var ths = table.getElementsByTagName("th");
+  for (i = 0; i < ths.length; i++) {
+    ths[i].style.backgroundColor = "";
+  }
+  ths[n].style.backgroundColor = "#fffcdf";
+}
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("ice-cream-table");
+  switching = true;
+  dir = "asc";
+  
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      
+      x = rows[i].getElementsByTagName("td")[n];
+      y = rows[i + 1].getElementsByTagName("td")[n];
+      
+      if (dir == "asc") {
+        if (n == 1 || n == 3) {
+          if (getNumericValue(x.innerHTML) > getNumericValue(y.innerHTML)) {
+            shouldSwitch = true;
+            break;
+          }
+        } else {
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+            shouldSwitch = true;
+            break;
+          }
+        }
+      } else if (dir == "desc") {
+        if (n == 1 || n == 3) {
+          if (getNumericValue(x.innerHTML) < getNumericValue(y.innerHTML)) {
+            shouldSwitch = true;
+            break;
+          }
+        } else {
+          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+            shouldSwitch = true;
+            break;
+          }
+        }
+      }
+    }
+    
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+  
+  var ths = table.getElementsByTagName("th");
+  for (i = 0; i < ths.length; i++) {
+    ths[i].style.backgroundColor = "";
+  }
+  ths[n].style.backgroundColor = "#fffcdf";
+}
+
+function getNumericValue(valueString) {
+  var numericValue = parseInt(valueString);
+  return isNaN(numericValue) ? valueString : numericValue;
+}
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function changeSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("gallery-slide");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+function toggleDropdown(num) {
+  var dropdownContent = document.getElementById("dropdown" + num);
+  dropdownContent.classList.toggle("active");
+
+  // Get the video element inside the dropdown
+  var video = dropdownContent.querySelector("iframe");
+
+  // If the dropdown is active, set the height of the dropdown container to the video's height
+  if (dropdownContent.classList.contains("active")) {
+    dropdownContent.style.height = video.offsetHeight + "px";
+  } else {
+    dropdownContent.style.height = "auto"; // Set back to auto when closing
+  }
+}
+
+
+function openModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "block";
+  var modalImg = document.getElementById("img" + modalId.slice(-1));
+  var captionText = document.getElementById("caption" + modalId.slice(-1));
+  modalImg.src = document.getElementById(modalId).previousElementSibling.src;
+  captionText.innerHTML = document.getElementById(modalId).nextElementSibling.innerHTML;
+}
+
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "none";
+}
+
+</script>
+</div>
+  </body>
+</html>
